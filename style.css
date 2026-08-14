@@ -555,3 +555,305 @@ h3 {
     min-height: 140px;
     resize: vertical;
 }
+/* ==========================
+   АДАПТИВ ДЛЯ ТЕЛЕФОНА
+========================== */
+
+@media (max-width: 768px) {
+.header-container {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 0;
+}
+
+.nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.header-button {
+    width: 100%;
+    text-align: center;
+}
+
+.hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    margin: 25px auto;
+}
+
+.hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+}
+/* =========================
+   МОБИЛЬНАЯ ВЕРСИЯ
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Общий контейнер */
+    .container {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+
+    /* Отступы секций */
+    .section {
+        padding: 60px 0;
+    }
+
+    /* =========================
+       ШАПКА
+    ========================= */
+
+    .header-container {
+        min-height: 70px;
+        gap: 12px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo-title {
+        font-size: 25px;
+    }
+
+    .logo-subtitle {
+        font-size: 7px;
+    }
+
+    .header-button {
+        padding: 10px 14px;
+        font-size: 11px;
+        white-space: nowrap;
+        border-radius: 8px;
+    }
+
+    /* =========================
+       ПЕРВЫЙ ЭКРАН
+    ========================= */
+
+    .hero {
+        padding: 45px 0 60px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        line-height: 0.95;
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    /* =========================
+       ЗАГОЛОВКИ СЕКЦИЙ
+    ========================= */
+
+    .section-header {
+        margin-bottom: 35px;
+    }
+
+    .section-title {
+        font-size: 44px;
+        line-height: 1;
+    }
+
+    .section-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       ПРЕИМУЩЕСТВА
+    ========================= */
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    /* =========================
+       КАТАЛОГ
+    ========================= */
+
+    .catalog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .catalog-card {
+        border-radius: 18px;
+        overflow: hidden;
+    }
+
+    .catalog-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .catalog-card-content {
+        padding: 22px;
+    }
+
+    .catalog-card h3 {
+        font-size: 30px;
+    }
+
+    /* =========================
+       ДОСТАВКА
+    ========================= */
+
+    .delivery-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .delivery-image {
+        width: 100%;
+    }
+
+    .delivery-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .delivery-text {
+        font-size: 14px;
+    }
+
+    .delivery-list {
+        font-size: 14px;
+    }
+
+    /* =========================
+       КОНТАКТЫ
+    ========================= */
+
+    .contacts-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contacts-info {
+        width: 100%;
+    }
+
+    .contacts .section-title {
+        font-size: 44px;
+    }
+
+    .contacts-text {
+        font-size: 14px;
+    }
+
+    .contact-item {
+        margin-bottom: 25px;
+    }
+
+    .contact-item h4 {
+        font-size: 15px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    /* =========================
+       ФОРМА
+    ========================= */
+
+    .contact-form {
+        width: 100%;
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .contact-form h3 {
+        font-size: 34px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* =========================
+       ФУТЕР
+    ========================= */
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
