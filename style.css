@@ -523,6 +523,7 @@ h3 {
     flex: 1;
     display: flex;
     justify-content: center;
+    animation: float 5s ease-in-out infinite;
 }
 
 .delivery-image img {
