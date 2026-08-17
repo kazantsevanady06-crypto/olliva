@@ -858,3 +858,115 @@ h3 {
         gap: 15px;
     }
 }
+/* ========================================
+   ДОПОЛНИТЕЛЬНАЯ МОБИЛЬНАЯ АДАПТАЦИЯ
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* ========================================
+       БЛОК ДОСТАВКА
+    ======================================== */
+
+    .delivery-container {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Заголовок занимает всю ширину */
+    .delivery-content {
+        display: contents;
+    }
+
+    .delivery-content .section-subtitle {
+        grid-column: 1 / -1;
+    }
+
+    .delivery-content .section-title {
+        grid-column: 1 / -1;
+        width: 100%;
+        font-size: 42px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    /* Текст и список слева */
+    .delivery-text {
+        grid-column: 1;
+        margin: 0;
+        padding-right: 10px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .delivery-list {
+        grid-column: 1;
+        margin-top: 18px;
+        padding-right: 10px;
+    }
+
+    .delivery-list li {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+
+    /* Фотография справа */
+    .delivery-image {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+        width: 100%;
+        align-self: center;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    .delivery-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+        object-fit: cover;
+    }
+
+    /* ========================================
+       КАРТОЧКИ — ДВИЖЕНИЕ НА ТЕЛЕФОНЕ
+    ======================================== */
+
+    .feature-card {
+        animation: mobileFloat 5s ease-in-out infinite;
+    }
+
+    .feature-card:nth-child(2) {
+        animation-delay: 0.7s;
+    }
+
+    .feature-card:nth-child(3) {
+        animation-delay: 1.4s;
+    }
+
+    .feature-card:nth-child(4) {
+        animation-delay: 2.1s;
+    }
+
+}
+
+/* ========================================
+   ПЛАВНОЕ ДВИЖЕНИЕ КАРТОЧЕК
+======================================== */
+
+@keyframes mobileFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
